@@ -49,6 +49,10 @@ div#turisdogando h3 {
     color: var(--cor5);
 }
 
+div#turisdogando h3:hover {
+    color: white;
+}
+
 div#cursoHTML {
     background-color: lightblue;
     max-width: 400px;
@@ -61,6 +65,10 @@ div#cursoHTML {
 
 div#cursoHTML h3 {
     color: darkblue;
+}
+
+div#cursoHTML h3:hover {
+    color: white;
 }
 
 footer {
