@@ -1,0 +1,36 @@
+:root {
+    --cor0:hsla(147, 78%, 93%, 0.689);
+    --cor1:#83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div#container {
+    display: flex;
+}
+
+div#turisdogando {
+    background-color: var(--cor2);
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+}
