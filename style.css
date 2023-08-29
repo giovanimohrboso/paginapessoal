@@ -59,6 +59,10 @@ div#cursoHTML {
     border-radius: 5px;
 }
 
+div#cursoHTML h3 {
+    color: darkblue;
+}
+
 footer {
     text-align: center;
 }
