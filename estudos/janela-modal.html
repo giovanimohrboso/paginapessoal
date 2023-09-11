@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>janela modal</title>
+   <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        div.menu{
+            margin-top: 5px;
+            margin-left: 0px;
+            
+        }
+
+        div.menu img {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+
+        .btn {
+            background-color: red;
+            display: inline;
+            padding: 25px 60px;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+        }
+
+        .janela_modal {
+            width: 99vw;
+            height: 99vh;
+            position: relative;
+            top: 0;
+            left: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(96, 175, 103, 0.49);
+            z-index: 999;
+        }
+        .janela_modal.abrir {
+            display: flex;
+        }
+        div.modal {
+            width: 60%;
+            min-width: 400px;
+            min-height: 200px;
+            background-color: rgba(255, 255, 255, 0.575);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 50px;
+        }
+        .fechar {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            color: white;
+            font-size: 23px;
+            border: 0;
+            cursor: pointer;
+        }
+
+   </style> 
+</head>
+<body>
+    <div onclick="abrirModal()" class="btn">Clique aqui</div>
+   <!-- <div class="menu">
+        <a href="../../imagens/link-externo.png">
+            <img src="../../imagens/link-externo.png" >
+            
+        </a>
+        <a href="../../imagens/como-chegar.png">
+            <img src="../../imagens/como-chegar.png" >
+        </a>
+    </div>-->
+    <div class="janela_modal" id="janela_modal">
+        <div class="modal">
+            <button class="fechar" id="fechar">X</button>
+            <h1>Janela Modal</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae perspiciatis nostrum dolor. Voluptatum officia deleniti quidem facilis, optio magnam, provident ullam praesentium ad nemo nostrum sapiente iure neque voluptates vero.</p>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+
+    
+</html>
